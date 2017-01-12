@@ -1,3 +1,10 @@
+/*****************************
+             Intro
+*******************************/
+.text-color {
+    color: #FFFFFF
+}
+
 .wrapper#intro {
     animation: gradientColor 100s infinite;
     background-color: currentColor;
@@ -6,22 +13,6 @@
 .wrapper#intro {
     min-height: 100vh;
     display: flex;
-}
-
-.text-color {
-    color: #FFFFFF
-}
-
-.spotlights > section > .jorden {
-    background: #8000FF;
-}
-
-.spotlights > section > .alvin {
-    background: #739CA4;
-}
-
-.spotlights > section > .laohan {
-    background: #39524A;
 }
 
 @supports (background-blend-mode: overlay) {
@@ -62,4 +53,37 @@
     90% {
         color: hsl(288, 60%, 40%);
     }
+}
+
+/*****************************
+             Members
+*******************************/
+.spotlights > section > .jorden {
+    background: #8000FF;
+}
+
+.spotlights > section > .alvin {
+    background: #739CA4;
+}
+
+.spotlights > section > .laohan {
+    background: #39524A;
+}
+
+/*****************************
+            footer
+*******************************/
+.wrapper.style1-alt {
+    background-color: #3949AB;
+}
+
+#footer > .inner .menu {
+    color: #FFFFFF;
+}
+
+/*****************************
+  image cover before when load
+*******************************/
+.spotlights > section > .image:before {
+    background: rgba(149, 117, 205, 0.6);
 }
