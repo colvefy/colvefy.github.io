@@ -1,3 +1,17 @@
+.wrapper#intro {
+    animation: gradientColor 100s infinite;
+    background-color: currentColor;
+}
+
+.wrapper#intro {
+    min-height: 100vh;
+    display: flex;
+}
+
+.text-color {
+    color: #FFFFFF
+}
+
 .spotlights > section > .jorden {
     background: #8000FF;
 }
@@ -8,4 +22,44 @@
 
 .spotlights > section > .laohan {
     background: #39524A;
+}
+
+@supports (background-blend-mode: overlay) {
+    .wrapper#intro {
+        background-image: linear-gradient(45deg, #FFF 10%, #000 90%);
+        background-blend-mode: overlay;
+    }
+}
+
+@keyframes gradientColor {
+    from, to {
+        color: hsl(324, 70%, 45%);
+    }
+    10% {
+        color: hsl(360, 65%, 45%);
+    }
+    20% {
+        color: hsl(36, 80%, 45%);
+    }
+    30% {
+        color: hsl(72, 75%, 35%);
+    }
+    40% {
+        color: hsl(108, 65%, 35%);
+    }
+    50% {
+        color: hsl(144, 75%, 35%);
+    }
+    60% {
+        color: hsl(180, 75%, 35%);
+    }
+    70% {
+        color: hsl(216, 60%, 45%);
+    }
+    80% {
+        color: hsl(252, 65%, 50%);
+    }
+    90% {
+        color: hsl(288, 60%, 40%);
+    }
 }
